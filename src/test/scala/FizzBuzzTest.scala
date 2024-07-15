@@ -15,4 +15,8 @@ class FizzBuzzTest extends AnyFunSuite {
   test("lists the numbers up to four") {
     assert(FizzBuzz.generate(4) == "1, 2, Fizz, 4")
   }
+
+  test("lists the numbers up to five") {
+    assert(FizzBuzz.generate(5) == "1, 2, Fizz, 4, Buzz")
+  }
 }
