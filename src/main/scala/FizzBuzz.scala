@@ -7,7 +7,7 @@ object FizzBuzz {
   }
 
   def generate(number: Int): String = {
-    (1  to number).toList
+    (1  to number)
       .map(nToFizzBuzzValue)
       .mkString(", ")
   }
