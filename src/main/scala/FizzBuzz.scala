@@ -1,9 +1,9 @@
 object FizzBuzz {
-  def nToFizzBuzzValue(number: Int): String = number match {
-    case x if x % 15 == 0 => "FizzBuzz"
-    case x if x % 5 == 0 => "Buzz"
-    case x if x % 3 == 0 => "Fizz"
-    case x => x.toString
+  def nToFizzBuzzValue(number: Int): String = (number % 5, number % 3) match {
+    case (0, 0) => "FizzBuzz"
+    case (0, _) => "Buzz"
+    case (_, 0) => "Fizz"
+    case _      => number.toString
   }
 
   def generate(number: Int): String = {
